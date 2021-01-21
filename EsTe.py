@@ -21,7 +21,13 @@ def estrai_temi_giornali(testata):
     if testata == "nytimes":
         url_testata = "nytimes.com"
     elif testata == "bbc":
-        url_testata == "bbc.co.uk"
+        url_testata = "bbc.co.uk"
+    elif testata == "cnn":
+        url_testata = "cnn.com"
+    elif testate == "thesun":
+        url_testata = "thesun.co.uk"
+    elif testate == "wtimes":
+        url_testata = "washingtontimes.com"
     #apertura file in modalità lettura
     with open('file_zip.csv','r') as file_con_url:
         csv_reader = DictReader(file_con_url)
